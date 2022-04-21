@@ -70,17 +70,17 @@ operators.forEach((item, index)=>{
 function kalc(a, b){
 console.log(operatorsArray)
 if(operatorsArray[0]==="+")
-{calculate = (parseFloat(a) + parseFloat(b)).toPrecision(4);
+{calculate = (parseFloat(a) + parseFloat(b)).toPrecision(10);
 }
 
 else if(operatorsArray[0]==="-")
-    {calculate = (parseFloat(a) - parseFloat(b)).toPrecision(4);} 
+    {calculate = (parseFloat(a) - parseFloat(b)).toPrecision(10);} 
 
 else if(operatorsArray[0]==="×")
-     {calculate = (parseFloat(a) * parseFloat(b)).toPrecision(4);}
+     {calculate = (parseFloat(a) * parseFloat(b)).toPrecision(10);}
 
 else if(operatorsArray[0]==="÷")
-    {calculate = (parseFloat(a) / parseFloat(b)).toPrecision(4);} 
+    {calculate = (parseFloat(a) / parseFloat(b)).toPrecision(10);} 
 
 previous = calculate
 input.innerHTML = previous
